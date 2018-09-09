@@ -36,6 +36,12 @@
     display: flex;
     width: 197px;
     height: 67px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo:hover{
+    cursor: pointer;
 }
 
 .logo-polygon{
@@ -95,6 +101,7 @@
 
 .nav-buttons:hover{
     color: #18cfab;
+    cursor: pointer;
 }
 
 .nav-buttons:hover:after{
@@ -115,6 +122,7 @@
 
 .fas:hover{
     color: #18cfab;
+    cursor: pointer;
 }
 
 .fas:hover:after{
