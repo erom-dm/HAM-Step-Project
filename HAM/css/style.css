@@ -1,3 +1,2 @@
-* {
-    display: none;
-}
+@import "header.css";
+@import "mainButtons.css";
