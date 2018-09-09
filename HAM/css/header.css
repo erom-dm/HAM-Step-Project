@@ -74,14 +74,61 @@
 
 .nav-items{
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
     width: 703px;
     height: 120px;
-    background-color: #b2ccff;
+    justify-content: space-between;
+    align-content: stretch;
+
+    color: #b8b8b8;
+}
+
+.nav-buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons:hover{
+    color: #18cfab;
+}
+
+.nav-buttons:hover:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+    background-color: #18cfab;
+}
+
+.fas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas:hover{
+    color: #18cfab;
+}
+
+.fas:hover:after{
+    color: #18cfab;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+    background-color: #18cfab;
 }
 
 .header-container{
     height:100%;
     width: 1200px;
     padding: 0 20px;
-    background-color: #d2caff;
 }
