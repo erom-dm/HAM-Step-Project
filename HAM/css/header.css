@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    width: 100%;
+    height: 1012px;
+    margin: 0 auto;
+    justify-content: center;
+    background-image: url(../img/header_bg.jpg);
+    background-attachment: fixed;
+}
+
+.navigation {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color:  rgba(73, 71, 63, 0.6);
+}
+
+.header-container{
+    height:100%;
+    width: 1200px;
+    padding: 0 20px;
+    background-color: #d2caff;
+}
