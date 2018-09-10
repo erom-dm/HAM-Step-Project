@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    min-width: 1200px;
+    font-family: Montserrat, sans-serif;
+}
+
+.section__header {
+    font-size: 36px;
+    text-align: center;
+    color: #4e4e4e;
+    position: relative;
+    margin-bottom: 110px;
+}
+
+.section__header::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 1px;
+    margin-right: 5px;
+    background-color: #18cfab;
+    position: absolute;
+    left: 50%;
+    bottom: -42px;
+    transform: translate(-50%, 0);
+    box-shadow: 5px 4px 0 0 #18cfab;
+}

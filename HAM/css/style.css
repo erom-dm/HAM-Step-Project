@@ -1,2 +1,7 @@
 @import "header.css";
 @import "mainButtons.css";
+
+@import 'base.css';
+@import 'services.css';
+@import 'purchase-block.css';
+@import 'breaking-news.css';
