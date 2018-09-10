@@ -135,7 +135,7 @@
     align-items: center;
 }
 
-.fas:hover{
+.fas.fa-search:hover{
     color: #18cfab;
     cursor: pointer;
     animation-name: nav-hover;
@@ -143,7 +143,7 @@
     animation-fill-mode: forwards;
 }
 
-.fas:hover:after{
+.fas.fa-search:hover:after{
     color: #18cfab;
     position: absolute;
     content: "";
