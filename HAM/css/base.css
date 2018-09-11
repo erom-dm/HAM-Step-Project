@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     min-width: 1200px;
     font-family: Montserrat, sans-serif;
 }
@@ -24,4 +23,15 @@ body {
     bottom: -42px;
     transform: translate(-50%, 0);
     box-shadow: 5px 4px 0 0 #18cfab;
+}
+
+.button {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px;
+    border-radius: 4px;
 }

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>HAM</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -65,15 +64,15 @@
                 Our Services
             </h2>
             <ul class="services__menu">
-                <li class="services__menu-item services__menu-item_active">Web Design</li>
-                <li class="services__menu-item">Graphic Design</li>
-                <li class="services__menu-item">Online Support</li>
-                <li class="services__menu-item">App Design</li>
-                <li class="services__menu-item">Online Marketing</li>
-                <li class="services__menu-item">Seo Service</li>
+                <li class="services__menu-item active"><a href="#">Web Design</a></li>
+                <li class="services__menu-item"><a href="#">Graphic Design</a></li>
+                <li class="services__menu-item"><a href="#">Online Support</a></li>
+                <li class="services__menu-item"><a href="#">App Design</a></li>
+                <li class="services__menu-item"><a href="#">Online Marketing</a></li>
+                <li class="services__menu-item"><a href="#">Seo Service</a></li>
             </ul>
-            <div class="services__item services__item_active">
-                <div class="services__item-img img-1"></div>
+            <div class="services__item active">
+                <img src="img/services-img-1.png" class="services__item-img" alt="">
                 <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad animi
                     asperiores assumenda consequuntur culpa cumque debitis dicta dolores dolorum ea eaque earum error est
                     eum expedita facilis fugit hic id ipsum iure, minus molestiae necessitatibus, nesciunt officia officiis
@@ -84,7 +83,7 @@
                     voluptatum! Aperiam aspernatur ea fuga minus molestiae omnis possimus recusandae vero.</p>
             </div>
             <div class="services__item">
-                <div class="services__item-img img-2"></div>
+                <img src="img/services-img-2.jpg" class="services__item-img" alt="">
                 <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores
                     eius ipsum iure molestias temporibus! Amet dolore ea hic, ipsa laboriosam, magni pariatur porro, quasi
                     repellendus sequi ullam voluptate! Distinctio est iste odio odit pariatur qui quos. Ad alias consequatur
@@ -95,7 +94,7 @@
                     tenetur voluptatibus. Cupiditate eos mollitia nulla perspiciatis quas saepe tenetur!</p>
             </div>
             <div class="services__item">
-                <div class="services__item-img img-3"></div>
+                <img src="img/services-img-3.jpg" class="services__item-img" alt="">
                 <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem, eum
                     quidem quod saepe sit! At explicabo fugit harum ipsum, molestias provident quod ratione, recusandae
                     rerum tenetur velit voluptas voluptates voluptatum! Asperiores cupiditate impedit libero maiores,
@@ -106,7 +105,7 @@
                     vitae! Beatae deleniti deserunt dolores, natus pariatur sit voluptatem.</p>
             </div>
             <div class="services__item">
-                <div class="services__item-img img-4"></div>
+                <img src="img/services-img-4.jpg" class="services__item-img" alt="">
                 <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolore eaque
                     eius ex fugit iusto maiores minima nisi nobis vitae. Aperiam beatae cumque dolorum ducimus et harum
                     incidunt nisi, odit quia quidem tempore vitae! A aliquid amet atque, commodi consequuntur cum doloremque
@@ -117,7 +116,7 @@
                     ea enim molestiae!</p>
             </div>
             <div class="services__item">
-                <div class="services__item-img img-5"></div>
+                <img src="img/services-img-5.jpg" class="services__item-img" alt="">
                 <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut
                     autem blanditiis, commodi dolore doloribus dolorum earum eveniet facere fugiat id, ipsum maiores nam
                     numquam quam quisquam, quod sed sequi soluta voluptatum? Aperiam id nemo perferendis quisquam soluta.
@@ -128,7 +127,7 @@
                     quasi voluptas. Culpa deserunt id rem ut voluptatum.</p>
             </div>
             <div class="services__item">
-                <div class="services__item-img img-6"></div>
+                <img src="img/services-img-6.jpg" class="services__item-img" alt="">
                 <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloremque fuga
                     inventore natus placeat quos rem sequi similique sint temporibus, totam unde voluptas voluptatum! A
                     autem et unde? Aperiam deleniti ea esse ex expedita illum, impedit minima mollitia nihil non quidem,
@@ -142,9 +141,9 @@
     </div>
     <div class="purchase-block">
         <h2 class="purchase-block__header">Everything is ready. Just buy and install now</h2>
-        <h3 class="purchase-block__sub-header">Smooth reliable responsive ready perfect portfolio unique blog layout and
-            many many options for you</h3>
-        <a class="purchase-block__button">Purchase now</a>
+        <p class="purchase-block__sub-header">Smooth reliable responsive ready perfect portfolio unique blog layout and
+            many many options for you</p>
+        <a href="#" class="purchase-block__button button">Purchase now</a>
     </div>
     <div class="amazing-work">
         <div class="amazing-work-container">
@@ -284,7 +283,40 @@
             </div>
         </div>
     </div>
-    <div class="people-say"></div>
+    <div class="people-say">
+        <h2 class="people-say__header section__header">
+            What People Say About the Ham
+        </h2>
+        <div class="people-say__slider">
+            <div><div class="people-say__item">1</div></div>
+            <div><div class="people-say__item">2</div></div>
+            <div><div class="people-say__item">3</div></div>
+            <div><div class="people-say__item">4</div></div>
+        </div>
+        <div class="modal">
+            <div class="modal__container">
+                <p class="modal__reg-text">Order your theme now</p>
+                <form action="#" class="register" id="register">
+                    <input type="email" placeholder="your mail*" class="register__field modal__item">
+                    <input type="password" placeholder="your password*" class="register__field modal__item">
+                    <button type="submit" form="register" value="Order now" class="register__button modal__item">Order now</button>
+                    <input type="checkbox" id="remember" class="register__checkbox ">
+                    <label for="remember" class="register__label small-text">
+                        Remember me
+                    </label>
+                    <a href="#" class="register__recovery small-text">Forgot Password?</a>
+                </form>
+            </div>
+            <p class="modal__measure"><span>or</span></p>
+            <div class="modal__container">
+                <p class="modal__social-text">Subsribe and get more options!</p>
+                <a href="#" class="modal__social-button modal__item facebook">Sign In with Facebook</a>
+                <a href="#" class="modal__social-button modal__item twitter">Sign In with Twitter</a>
+                <a href="#" class="modal__social-button  modal__item google">Sign In with Google+</a>
+            </div>
+        </div>
+    </div>
+
     <div class="gallery"></div>
     <div class="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
