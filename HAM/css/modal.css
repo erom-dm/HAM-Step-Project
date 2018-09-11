@@ -1,0 +1,235 @@
+.modal {
+    box-sizing: border-box;
+    width: 820px;
+    padding: 45px 45px 55px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal__container {
+    width: calc(50% - 33px);
+}
+
+.modal__measure span {
+    color:  #919191;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+}
+.modal__measure::before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 1px;
+    background-color: #18cfab;
+    box-shadow: 0 120px 0 0 #18cfab;
+    top: 88px;
+}
+
+.modal__container:first-of-type {
+    position: relative;
+}
+
+.modal__reg-text {
+    color: #474646;
+    font-size: 22px;
+}
+
+.modal__item {
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 23px;
+}
+
+.register__field {
+    border: none;
+    box-shadow: 0 0 1px 0 #bebebe;
+    background-image: url(../img/lock-img.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.register__field:first-of-type {
+    background-image: url(../img/e-mail-img.png);
+}
+
+.register__field:focus {
+    background-image:none;
+}
+
+.register__checkbox {
+    visibility: hidden;
+}
+
+.small-text {
+    font-size: 13px;
+    color: #b6b6b6;
+    position: absolute;
+}
+
+.register__label {
+    bottom: 0;
+    left: 25px;
+}
+
+.register__recovery {
+    bottom: 0;
+    right: 0;
+}
+
+.register__label::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    background-color: #dedede;
+}
+
+.register__checkbox:checked + .register__label::after {
+    content: '';
+    width: 12px;
+    height: 4px;
+    border: 2px solid #199780;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 6px;
+    left: -24px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(222, 222, 222, 0.7);
+}
+
+:-ms-input-placeholder {
+    color: rgba(222, 222, 222, 0.7);
+}
+
+::-moz-placeholder {
+    color: rgba(222, 222, 222, 0.7);
+}
+
+.register__field:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.register__field:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.register__field:focus::-moz-placeholder:focus {
+    color: transparent;
+}
+
+.register__button {
+    color: #ffffff;
+    font-size: 21px;
+    background-color: #18cfab;
+    margin: 23px 0 15px;
+}
+
+.register__button:hover {
+    background-color: #099178;
+}
+
+.modal__social-text {
+    color:  #18cfab;
+    font-size: 21px;
+    text-align: justify;
+}
+
+.modal__social-button {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.facebook {
+    background-color: #324e89;
+}
+
+.facebook::before {
+    content: '';
+    width: 65px;
+    text-align: center;
+    background: #385899;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.facebook:after {
+    content: '\f39e';
+    font-family: "Font Awesome 5 Brands";
+    font-size: 27px;
+    position: absolute;
+    left: 25px;
+}
+
+.twitter {
+    background-color: #3ea3d2;
+}
+
+.twitter:before {
+    content: '';
+    width: 65px;
+    text-align: center;
+    background: #43b1e4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+
+}
+
+.twitter:after {
+    content: '\f099';
+    font-family: "Font Awesome 5 Brands";
+    font-size: 27px;
+    position: absolute;
+    left: 20px;
+}
+
+.google {
+    background-color: #cf3c21
+}
+
+.google:before {
+    content: '';
+    width: 65px;
+    text-align: center;
+    background: #df4b31;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.google:after {
+    content: '\f0d5';
+    font-family: "Font Awesome 5 Brands";
+    font-size: 27px;
+    position: absolute;
+    left: 19px;
+}
