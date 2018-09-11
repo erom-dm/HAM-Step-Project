@@ -5,12 +5,18 @@
 * {
     box-sizing: border-box;
 }
+.amazing-work{
+    border-bottom: 1px solid #ececec;
+    background-color: #f8fcfe;
+    height:100%;
+}
 
 .amazing-work-container{
-    height: 1212px;
+    height: 100%;
     width: 1200px;
-    padding: 97px 20px 100px 20px;
+    padding: 97px 20px 85px 20px;
     margin: 0 auto;
+    background-color: #f8fcfe;
 }
 
 .amazing-work__header .section__header{
@@ -73,13 +79,20 @@
 
 /* Content */
 
-.amazing-work__content-container{
-    display: flex;
-    /*temporary high*/
-    height: 620px;
+.amazing-work__grid{
+    display: grid;
     width: 1139px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-items: center;
+    align-items: center;
     margin: 71px auto 0;
-    background-color: #fffcb0;
+}
+
+.grid-item{
+
 }
 
 .amazing-work__button{
@@ -89,7 +102,7 @@
     width: 165px;
     height: 60px;
     background-color: #18cfab;
-    margin: 72px auto 100px auto;
+    margin: 72px auto 0px auto;
     border-radius: 4px;
     color:  #ffffff;
 }
