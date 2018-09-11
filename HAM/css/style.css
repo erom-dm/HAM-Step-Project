@@ -1,3 +1,7 @@
+@import "header.css";
+@import "main-buttons.css";
+@import "amazing-work.css";
+
 @import 'base.css';
 @import 'services.css';
 @import 'purchase-block.css';
