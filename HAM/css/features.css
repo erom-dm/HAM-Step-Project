@@ -14,36 +14,30 @@
     align-items: stretch;
 }
 
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 95px;
+    padding-bottom: 120px;
+    width: 25%;
+}
+
 .feature:nth-child(odd){
-    width:25%;
     background-color: #1c2a33;
     box-shadow: 0 -7px #18cfab;
 }
 
 .feature:nth-child(even){
-    width:25%;
     background-color: #18cfab;
     box-shadow: 0 -7px #ffffff;
 }
 
-.feature-img1{
-    display: block;
-    margin: 88px auto 48px auto;
-}
-
-.feature-img2{
-    display: block;
-    margin: 99px auto 59px auto;
-}
-
-.feature-img3{
-    display: block;
-    margin: 88px auto 49px auto;
-}
-
-.feature-img4{
-    display: block;
-    margin: 98px auto 59px auto;
+.feature-img{
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature:nth-child(odd) p{
