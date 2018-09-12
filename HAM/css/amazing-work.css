@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.amazing-work{
+    border-bottom: 1px solid #ececec;
+    background-color: #f8fcfe;
+    height:100%;
+}
+
+.amazing-work-container{
+    height: 100%;
+    width: 1200px;
+    padding: 97px 20px 85px 20px;
+    margin: 0 auto;
+    background-color: #f8fcfe;
+}
+
+.amazing-work__header .section__header{
+    margin-bottom: 101px;
+}
+
+/* Navigation */
+
+.amazing-work__navigation{
+    display: flex;
+    width: 609px;
+    margin: 0 auto;
+}
+
+.amazing-work__navigation__item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 24px 20px 20px 20px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #717171;
+    border: 1px solid #ececec;
+    border-left: none;
+}
+
+.amazing-work__navigation__item:first-child {
+    border-left: 1px solid #ececec;
+}
+
+.amazing-work__navigation__item:hover{
+    cursor: pointer;
+    animation-name: btn-hover;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+}
+
+.amazing-work__navigation__item:hover:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: -2px;
+    background-color: #18cfab;
+    animation-name: btn-pseudo-hover;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn-pseudo-hover {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes btn-hover {
+    0%   {color: #717171;}
+    100% {color: #18cfab;}
+}
+
+/* Content */
+
+.amazing-work__grid{
+    display: grid;
+    width: 1139px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-items: center;
+    align-items: center;
+    margin: 71px auto 0;
+}
+
+.grid-item{
+
+}
+
+.amazing-work__button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 165px;
+    height: 60px;
+    background-color: #18cfab;
+    margin: 72px auto 0px auto;
+    border-radius: 4px;
+    color:  #ffffff;
+}
+
+.amazing-work__button i{
+    flex-basis: 43%;
+}
+
+.amazing-work__button p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    flex-basis: 68%;
+}
+
+.amazing-work__button:hover{
+    cursor: pointer;
+    animation-name: work-btn-hover;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes work-btn-hover {
+    0%   {  color: #ffffff;}
+    100% {  color: #1c2a33;}
+}

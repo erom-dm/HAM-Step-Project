@@ -1,7 +1,8 @@
-* {
-    display: none;
-}
+@import "header.css";
+@import "main-buttons.css";
+@import "amazing-work.css";
 
-.background{
-    background-attachment: fixed;
-}
+@import 'base.css';
+@import 'services.css';
+@import 'purchase-block.css';
+@import 'breaking-news.css';
