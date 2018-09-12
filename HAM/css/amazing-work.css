@@ -31,7 +31,7 @@
     margin: 0 auto;
 }
 
-.amazing-work__navigation__item{
+.aw__nav-item{
     position: relative;
     display: flex;
     justify-content: center;
@@ -44,18 +44,18 @@
     border-left: none;
 }
 
-.amazing-work__navigation__item:first-child {
+.aw__nav-item:first-child {
     border-left: 1px solid #ececec;
 }
 
-.amazing-work__navigation__item:hover{
+.aw__nav-item:hover{
     cursor: pointer;
     animation-name: btn-hover;
     animation-duration: 0.45s;
     animation-fill-mode: forwards;
 }
 
-.amazing-work__navigation__item:hover:after{
+.aw__nav-item:hover:after{
     position: absolute;
     content: "";
     height: 2px;
@@ -84,15 +84,15 @@
     width: 1139px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 1px;
+    /*grid-column-gap: 1px;*/
     grid-row-gap: 1px;
     justify-items: center;
     align-items: center;
     margin: 71px auto 0;
 }
 
-.grid-item{
-
+.grid-item.passive{
+    display: none;
 }
 
 .amazing-work__button{
