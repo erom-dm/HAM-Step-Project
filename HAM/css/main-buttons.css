@@ -2,10 +2,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .features-container{
     display: flex;
     width: 100%;

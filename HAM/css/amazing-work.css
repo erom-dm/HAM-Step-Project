@@ -2,9 +2,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
 .amazing-work{
     border-bottom: 1px solid #ececec;
     background-color: #f8fcfe;
@@ -91,11 +88,11 @@
     margin: 71px auto 0;
 }
 
-.grid-item.passive{
+.grid-item{
     display: none;
 }
 
-.amazing-work__button{
+.load_more-btn{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,18 +104,18 @@
     color:  #ffffff;
 }
 
-.amazing-work__button i{
+.load_more-btn i{
     flex-basis: 43%;
 }
 
-.amazing-work__button p{
+.load_more-btn p{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
     flex-basis: 68%;
 }
 
-.amazing-work__button:hover{
+.load_more-btn:hover{
     cursor: pointer;
     animation-name: work-btn-hover;
     animation-duration: 0.45s;
