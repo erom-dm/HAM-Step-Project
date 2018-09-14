@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    height:108px;
+    width: 100%;
+    background-color: #22353f;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    font-family: Montserrat, sans-serif;
+    color: #aeaeae;
+    font-size: 14px;
+    font-weight: 300;
+}

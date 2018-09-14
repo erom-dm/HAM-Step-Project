@@ -1,0 +1,17 @@
+.gallery{
+    height: 100%;
+    width:100%;
+    background-color: #f8fcfe;
+}
+
+.gallery-container{
+    margin: 0 auto;
+    padding: 98px 20px 82px 20px;
+    width: 1200px;
+}
+
+.masonry{
+    display: grid;
+    width: 1140px;
+    margin: 0 auto;
+}

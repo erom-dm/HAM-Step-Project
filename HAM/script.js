@@ -41,3 +41,11 @@ $(function () {
     });
 
 });
+
+$('.masonry').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 370
+});
+// dfq?
+$('.masonry').append(".grid-item");
