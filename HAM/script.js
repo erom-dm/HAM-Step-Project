@@ -54,17 +54,10 @@ $grid.imagesLoaded().progress( function() {
 });
 
 $('.gallery-btn').on( 'click', function() {
-    let elems = [ getItemElement(), getItemElement(), getItemElement() ];
-    // make jQuery object
-    let $elems = $( elems );
-    $grid.append( $elems ).masonry( 'appended', $elems );
+    $('.item.add').toggleClass('add');
+    $grid.masonry();
 });
 
+
+
 // create <div class="grid-item"></div>
-function getItemElement() {
-    let elem = document.createElement('div');
-    let img = document.createElement('img');
-    img.setAttribute("src", `img/masonry-img/1.jpg`)
-    elem.appendChild(img);
-    return elem;
-}
