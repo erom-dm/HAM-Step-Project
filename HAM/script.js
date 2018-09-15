@@ -53,18 +53,18 @@ $grid.imagesLoaded().progress( function() {
     $grid.masonry();
 });
 
-$('.load_more-btn.gallery-btn').on( 'click', function() {
-    let elems = [ getItemElement(1), getItemElement(2), getItemElement(3) ];
+$('.gallery-btn').on( 'click', function() {
+    let elems = [ getItemElement(), getItemElement(), getItemElement() ];
     // make jQuery object
     let $elems = $( elems );
     $grid.append( $elems ).masonry( 'appended', $elems );
 });
 
 // create <div class="grid-item"></div>
-function getItemElement(a) {
+function getItemElement() {
     let elem = document.createElement('div');
     let img = document.createElement('img');
-    img.setAttribute("src", `img/masonry-img/${a}.jpg`)
+    img.setAttribute("src", `img/masonry-img/1.jpg`)
     elem.appendChild(img);
     return elem;
 }
