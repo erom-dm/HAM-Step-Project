@@ -51,13 +51,17 @@
     display: none;
 }
 
+.services__item.active {
+    display: flex;
+}
+
 .services__item-img {
     background-position: center;
     background-size: cover;
-    flex-shrink: 0;
-    flex-basis: 16.66%;
     height: 140px;
     margin-right: 20px;
+    flex: 0 1 17%;
+    max-width:200px;
 }
 
 .services__item-text {
@@ -65,9 +69,7 @@
     font-size: 14px;
     line-height: 25px;
     text-align: justify;
+    flex: 0 1 83%;
     transform: translate(0, -5px);
 }
 
-.services__item.active {
-    display: flex;
-}
