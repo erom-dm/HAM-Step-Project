@@ -115,7 +115,12 @@
     animation:spin 1s linear infinite;
 }
 
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+        }
+}
 
 .load_more-btn p{
     font-family: 'Montserrat', sans-serif;
