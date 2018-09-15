@@ -43,11 +43,28 @@ $(function () {
 });
 
 let $grid = $('.masonry').masonry({
-    itemSelector: '.grid-item',
+    itemSelector: '.item',
     percentPosition: true,
-    columnWidth: '.grid-sizer'
+    columnWidth: '.grid-sizer',
+    gutter: 15
 });
 
 $grid.imagesLoaded().progress( function() {
     $grid.masonry();
 });
+
+$('.load_more-btn.gallery-btn').on( 'click', function() {
+    let elems = [ getItemElement(1), getItemElement(2), getItemElement(3) ];
+    // make jQuery object
+    let $elems = $( elems );
+    $grid.append( $elems ).masonry( 'appended', $elems );
+});
+
+// create <div class="grid-item"></div>
+function getItemElement(a) {
+    let elem = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", `img/masonry-img/${a}.jpg`)
+    elem.appendChild(img);
+    return elem;
+}
