@@ -11,7 +11,83 @@
 }
 
 .masonry{
-    display: grid;
     width: 1140px;
     margin: 0 auto;
 }
+
+.masonry:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer{
+    width: 370px;
+}
+
+.item{
+    display: block;
+    width: 370px;
+    float: left;
+    padding: 0;
+    margin-bottom: 17px;
+}
+
+.item.mid{
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    margin-bottom: 3px;
+}
+
+.item.small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 363px;
+}
+.item.last{
+    display: block;
+    width: 363px;
+}
+
+.item.small img{
+    margin-bottom: 3px;
+}
+
+.item img{
+    display: block;
+}
+
+.gallery-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 165px;
+    height: 60px;
+    background-color: #18cfab;
+    margin: 72px auto 0px auto;
+    border-radius: 4px;
+    color:  #ffffff;
+}
+
+.gallery-btn i{
+    flex-basis: 43%;
+}
+
+.gallery-btn p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    flex-basis: 68%;
+}
+
+.gallery-btn:hover{
+    cursor: pointer;
+    animation-name: work-btn-hover;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+}
+
+
