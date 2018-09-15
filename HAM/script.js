@@ -115,6 +115,7 @@ $(document).ready(function () {
         },1000);
     });
 
+    //---------------------amazing work pics----------------------------
     $(function () {
         let maxItemCount = 12;
         let type = "all";
@@ -175,7 +176,8 @@ $(document).ready(function () {
             'align-self': 'auto'
         });
     }
-});
+
+    // --------------------------  masonry
     let $grid = $('.masonry').masonry({
         itemSelector: '.item',
         percentPosition: true,
