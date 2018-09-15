@@ -11,7 +11,34 @@
 }
 
 .masonry{
-    display: grid;
+    display: block;
     width: 1140px;
     margin: 0 auto;
+}
+
+.masonry:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer{
+    width: 33.333%;
+}
+
+.grid-item{
+    width: 370px;
+    float: left;
+}
+
+.grid-item.small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 363px;
+}
+
+.grid-item.small img{
+    margin-bottom: 3px;
 }

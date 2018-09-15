@@ -42,10 +42,11 @@ $(function () {
 
 });
 
-$('.masonry').masonry({
-    // options
+let $grid = $('.masonry').masonry({
     itemSelector: '.grid-item',
     columnWidth: 370
 });
-// dfq?
-$('.masonry').append(".grid-item");
+
+$grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+});
