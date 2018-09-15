@@ -44,9 +44,10 @@ $(function () {
 
 let $grid = $('.masonry').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 370
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
 });
 
 $grid.imagesLoaded().progress( function() {
-    $grid.masonry('layout');
+    $grid.masonry();
 });

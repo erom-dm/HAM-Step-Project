@@ -11,7 +11,6 @@
 }
 
 .masonry{
-    display: block;
     width: 1140px;
     margin: 0 auto;
 }
@@ -27,8 +26,18 @@
 }
 
 .grid-item{
+    display: block;
     width: 370px;
     float: left;
+    padding: 0;
+    margin-bottom: 17px;
+}
+
+.grid-item.mid{
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    margin-bottom: 3px;
 }
 
 .grid-item.small{
@@ -38,7 +47,15 @@
     align-items: center;
     width: 363px;
 }
+.grid-item.last{
+    display: block;
+    width: 363px;
+}
 
 .grid-item.small img{
     margin-bottom: 3px;
+}
+
+.grid-item img{
+    display: block;
 }
