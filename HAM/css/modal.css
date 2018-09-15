@@ -1,14 +1,35 @@
 .modal {
-    box-sizing: border-box;
+    display: none;
+}
+
+.modal__wrapper.active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: block;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: flex;
     width: 820px;
+    box-sizing: border-box;
     padding: 45px 45px 55px;
     background-color: #fff;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal__container {
@@ -16,13 +37,14 @@
 }
 
 .modal__measure span {
-    color:  #919191;
+    color: #919191;
     font-size: 14px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     font-style: italic;
 }
+
 .modal__measure::before {
     content: "";
     position: absolute;
@@ -53,7 +75,7 @@
 
 .register__field {
     border: none;
-    box-shadow: 0 0 1px 0 #bebebe;
+    box-shadow: 0 0 1px 0 #dedede;
     background-image: url(../img/lock-img.png);
     background-repeat: no-repeat;
     background-position: 95% center;
@@ -64,7 +86,7 @@
 }
 
 .register__field:focus {
-    background-image:none;
+    background-image: none;
 }
 
 .register__checkbox {
@@ -147,7 +169,7 @@
 }
 
 .modal__social-text {
-    color:  #18cfab;
+    color: #18cfab;
     font-size: 21px;
     text-align: justify;
 }
