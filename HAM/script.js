@@ -33,18 +33,28 @@ $( document ).ready(function() {
         });
         $(".load_more-btn").click(function(e){
             e.preventDefault();
-            if (maxItemCount < 36){
-                maxItemCount += 12;
-            }
-            if(type === "all"){
-                item.slice(0, maxItemCount).show();
-            } else {
-                item.filter(`.${type}`).slice(0, maxItemCount).show();
-            }
+            $('#btn-plus').hide();
+            $('#btn-text').hide();
+            $('#loader').show();
+            setTimeout(function() {
+                if (maxItemCount < 36){
+                    maxItemCount += 12;
+                }
+                if(type === "all"){
+                    item.slice(0, maxItemCount).show();
+                } else {
+                    item.filter(`.${type}`).slice(0, maxItemCount).show();
+                }
 
-            if (maxItemCount === 36){
-                $(".load_more-btn").fadeOut();
-            }
+                $('#btn-plus').show();
+                $('#btn-text').show();
+                $('#loader').hide();
+
+                if (maxItemCount === 36){
+                    $(".load_more-btn").fadeOut();
+                }
+            }, 3000);
+
         });
 
     });
