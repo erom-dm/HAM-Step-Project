@@ -209,7 +209,7 @@ $(document).ready(function () {
             if(($grid).children().length > 30){
                 $(".gallery-btn").hide();
             }
-
+        // --  --
         }, getRandomInt(3, 10)*100);
     });
 
