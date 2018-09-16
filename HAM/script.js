@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
     // ---------------services-tab------------------------
     $(document).on('click', '.services__menu-item', function () {
         $('.services__menu-item').removeClass('active');
@@ -107,21 +107,15 @@ $( document ).ready(function() {
 
     });
 
+    let link = $('.nav-buttons');
+    link.click(function (e) {
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $($(this).children()[0].hash).offset().top,
+        },1000);
+    });
 
-    function selectCurrentSmall() {
-        $($('.reviews__item-img.small.active')[index-1]).css({
-            'border-color':'#18cfab',
-            'align-self': 'baseline'
-        });
-    }
-
-    function deleteSelectCurrentSmall() {
-        $($('.reviews__item-img.small.active')[index-1]).css({
-            'border-color':'rgba(31, 218, 181, 0.2)',
-            'align-self': 'auto'
-        });
-    }
-
+    //---------------------amazing work pics----------------------------
     $(function () {
         let maxItemCount = 12;
         let type = "all";
@@ -142,22 +136,48 @@ $( document ).ready(function() {
         });
         $(".load_more-btn").click(function(e){
             e.preventDefault();
-            if (maxItemCount < 36){
-                maxItemCount += 12;
-            }
-            if(type === "all"){
-                item.slice(0, maxItemCount).show();
-            } else {
-                item.filter(`.${type}`).slice(0, maxItemCount).show();
-            }
+            $('#btn-plus').hide();
+            $('#btn-text').hide();
+            $('#loader').show();
+            setTimeout(function() {
+                if (maxItemCount < 36){
+                    maxItemCount += 12;
+                }
+                if(type === "all"){
+                    item.slice(0, maxItemCount).show();
+                } else {
+                    item.filter(`.${type}`).slice(0, maxItemCount).show();
+                }
 
-            if (maxItemCount === 36){
-                $(".load_more-btn").fadeOut();
-            }
+                $('#btn-plus').show();
+                $('#btn-text').show();
+                $('#loader').hide();
+
+                if (maxItemCount === 36){
+                    $(".load_more-btn").fadeOut();
+                }
+            }, getRandomInt(15, 30)*100);
+
         });
 
     });
 
+
+    function selectCurrentSmall() {
+        $($('.reviews__item-img.small.active')[index-1]).css({
+            'border-color':'#18cfab',
+            'align-self': 'baseline'
+        });
+    }
+
+    function deleteSelectCurrentSmall() {
+        $($('.reviews__item-img.small.active')[index-1]).css({
+            'border-color':'rgba(31, 218, 181, 0.2)',
+            'align-self': 'auto'
+        });
+    }
+
+    // --------------------------  masonry
     let $grid = $('.masonry').masonry({
         itemSelector: '.item',
         percentPosition: true,
@@ -166,23 +186,36 @@ $( document ).ready(function() {
     });
 
     $grid.imagesLoaded().progress( function() {
-        $grid.masonry();
+        $grid.masonry('layout');
     });
 
-    $('.gallery-btn').on( 'click', function() {
-        let elems = [ getItemElement(), getItemElement(), getItemElement() ];
-        // make jQuery object
-        let $elems = $( elems );
-        $grid.append( $elems ).masonry( 'appended', $elems );
+    $(".gallery-btn").click(function(e) {
+        e.preventDefault();
+        $('#gallery-btn-plus').hide();
+        $('#gallery-btn-text').hide();
+        $('#gallery-loader').show();
+        setTimeout(function() {
+            let elems = $('<div></div>', {class:'item'}).append($('<img>',{src:`img/masonry-img/${getRandomInt(1,7)}.jpg`}));
+            $grid.append(elems).masonry('appended', elems);
+            elems = $('<div></div>', {class:'item'}).append($('<img>',{src:`img/masonry-img/${getRandomInt(1,7)}.jpg`}));
+            $grid.append(elems).masonry('appended', elems);
+            elems = $('<div></div>', {class:'item'}).append($('<img>',{src:`img/masonry-img/${getRandomInt(1,7)}.jpg`}));
+            $grid.append(elems).masonry('appended', elems);
+
+            $('#gallery-btn-plus').show();
+            $('#gallery-btn-text').show();
+            $('#gallery-loader').hide();
+
+            if(($grid).children().length > 30){
+                $(".gallery-btn").hide();
+            }
+
+        }, getRandomInt(3, 10)*100);
     });
 
-// create <div class="grid-item"></div>
-    function getItemElement() {
-        let elem = document.createElement('div');
-        let img = document.createElement('img');
-        img.setAttribute("src", `img/masonry-img/1.jpg`)
-        elem.appendChild(img);
-        return elem;
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
+
 });
 

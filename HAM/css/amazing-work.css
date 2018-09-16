@@ -108,6 +108,20 @@
     flex-basis: 43%;
 }
 
+.btn-loader{
+    display: none;
+    width: 30px;
+    height: 30px;
+    animation:spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+        }
+}
+
 .load_more-btn p{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
