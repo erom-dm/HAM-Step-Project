@@ -156,7 +156,7 @@ $(document).ready(function () {
                 if (maxItemCount === 36){
                     $(".load_more-btn").fadeOut();
                 }
-            }, 3000);
+            }, getRandomInt(15, 30)*100);
 
         });
 
@@ -186,12 +186,36 @@ $(document).ready(function () {
     });
 
     $grid.imagesLoaded().progress( function() {
-        $grid.masonry();
+        $grid.masonry('layout');
     });
 
-    $('.gallery-btn').on( 'click', function() {
-        $('.item.add').toggleClass('add');
-        $grid.masonry();
+    $(".gallery-btn").click(function(e) {
+        e.preventDefault();
+        $('#gallery-btn-plus').hide();
+        $('#gallery-btn-text').hide();
+        $('#gallery-loader').show();
+        setTimeout(function() {
+            let elems = $('<div></div>', {class:'item'}).append($('<img>',{src:`img/masonry-img/${getRandomInt(1,7)}.jpg`}));
+            $grid.append(elems).masonry('appended', elems);
+            elems = $('<div></div>', {class:'item'}).append($('<img>',{src:`img/masonry-img/${getRandomInt(1,7)}.jpg`}));
+            $grid.append(elems).masonry('appended', elems);
+            elems = $('<div></div>', {class:'item'}).append($('<img>',{src:`img/masonry-img/${getRandomInt(1,7)}.jpg`}));
+            $grid.append(elems).masonry('appended', elems);
+
+            $('#gallery-btn-plus').show();
+            $('#gallery-btn-text').show();
+            $('#gallery-loader').hide();
+
+            if(($grid).children().length > 30){
+                $(".gallery-btn").hide();
+            }
+
+        }, getRandomInt(3, 10)*100);
     });
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
 });
 

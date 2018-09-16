@@ -199,7 +199,7 @@
             <div class="load_more-btn">
                 <i id="btn-plus" class="fas fa-plus"></i>
                 <p id="btn-text">Load More</p>
-                <img id="loader" src="img/loader.png" alt="">
+                <img id="loader" class="btn-loader" src="img/loader.png" alt="">
             </div>
         </div>
     </div>
@@ -476,31 +476,19 @@
                 <div class="item">
                     <img src="img/masonry-img/7.jpg" alt="" >
                 </div>
-
-                <div class="item add">
-                    <img src="img/masonry-img/6.jpg" alt="" >
-                </div>
-                <div class="item add">
-                    <img src="img/masonry-img/7.jpg" alt="" >
-                </div>
-                <div class="item mid add">
-                    <img src="img/masonry-img/8.jpg" alt="" >
-                    <img src="img/masonry-img/9.jpg" alt="" >
-                </div>
-                <div class="item add">
-                    <img src="img/masonry-img/4.jpg" alt="" >
-                </div>
-                <div class="item last add">
-                    <img src="img/masonry-img/5.jpg" alt="" >
-                </div>
             </div>
-            <div class="gallery-btn"><i class="fas fa-plus"></i><p>Load More</p></div>
+            <div class="gallery-btn">
+                <i id="gallery-btn-plus" class="fas fa-plus">
+                </i><p id="gallery-btn-text">Load More</p>
+                <img id="gallery-loader" class="btn-loader" src="img/loader.png" alt="">
+            </div>
         </div>
     </div>
     <div class="footer">
         <p>&#xa9; Copyright 2015 <span class="highlight">theHam</span> | All Rights Reserved</p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="script.js"></script>
 </body>

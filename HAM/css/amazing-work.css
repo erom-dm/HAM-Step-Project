@@ -108,11 +108,11 @@
     flex-basis: 43%;
 }
 
-.load_more-btn img{
+.btn-loader{
     display: none;
     width: 30px;
     height: 30px;
-    animation:spin 1s linear infinite;
+    animation:spin 0.7s linear infinite;
 }
 
 @keyframes spin {
