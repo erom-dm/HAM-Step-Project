@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
+    <div id="home" class="header">
         <div class="navigation">
             <div class="navigation-container">
                 <a class="logo" href="#!">
@@ -17,15 +17,15 @@
                     <div class="logo-text"><p>the</p><p class="logo-highlight">Ham</p></div>
                 </a>
                 <div class="nav-items">
-                    <div class="nav-buttons">home</div>
+                    <div class="nav-buttons"><a href="#home">home</a></div>
                     <div class="nav-buttons">about</div>
-                    <div class="nav-buttons">skills</div>
-                    <div class="nav-buttons">service</div>
-                    <div class="nav-buttons">work</div>
+                    <div class="nav-buttons"><a href="#skills">skills</a></div>
+                    <div class="nav-buttons"><a href="#service">service</a></div>
+                    <div class="nav-buttons nav-work"><a href="#work">work</a></div>
                     <div class="nav-buttons">testimonial</div>
-                    <div class="nav-buttons">blog</div>
-                    <div class="nav-buttons">team</div>
-                    <div class="nav-buttons">contact</div>
+                    <div class="nav-buttons nav-blog"><a href="#blog">blog</a></div>
+                    <div class="nav-buttons nav-team"><a href="#team">team</a></div>
+                    <div class="nav-buttons"><a href="#msn-gallery">gallery</a></div>
                     <i class="fas fa-search"></i>
                 </div>
             </div>
@@ -39,7 +39,7 @@
 
         </div>
     </div>
-    <div class="features-container">
+    <div id="skills" class="features-container">
         <div class="feature">
             <div class="feature-img"><img src="img/feature1.png" alt=""></div>
             <p>different theme options</p>
@@ -57,8 +57,7 @@
             <p>responsive on all devices</p>
         </div>
     </div>
-    <div class="main-buttons"></div>
-    <div class="services">
+    <div id="service" class="services">
         <div class="services__container">
             <h2 class="services__header section__header">
                 Our Services
@@ -145,7 +144,7 @@
             many many options for you</p>
         <a href="#!" class="purchase-block__button button">Purchase now</a>
     </div>
-    <div class="amazing-work">
+    <div id="work" class="amazing-work">
         <div class="amazing-work-container">
             <h2 class="amazing-work__header section__header">Our Amazing Work</h2>
             <ul class="amazing-work__navigation">
@@ -197,7 +196,11 @@
                 <img src="img/wordpress5.jpg" alt="" class="grid-item wp">
 
             </div>
-            <div class="load_more-btn"><i class="fas fa-plus"></i><p>Load More</p></div>
+            <div class="load_more-btn">
+                <i id="btn-plus" class="fas fa-plus"></i>
+                <p id="btn-text">Load More</p>
+                <img id="loader" class="btn-loader" src="img/loader.png" alt="">
+            </div>
         </div>
     </div>
     <div class="breaking-news">
@@ -311,7 +314,7 @@
             </div>
         </div>
     </div>
-    <div class="reviews">
+    <div id="team" class="reviews">
         <h2 class="reviews__header section__header">
             What People Say About the Ham
         </h2>
@@ -432,7 +435,7 @@
             </div>
         </div>
     </div>
-    <div class="gallery">
+    <div id="msn-gallery" class="gallery">
         <div class="gallery-container">
             <h2 class="gallery-header section__header">Gallery of Best Images</h2>
             <div class="masonry">
@@ -473,31 +476,19 @@
                 <div class="item">
                     <img src="img/masonry-img/7.jpg" alt="" >
                 </div>
-
-                <div class="item add">
-                    <img src="img/masonry-img/6.jpg" alt="" >
-                </div>
-                <div class="item add">
-                    <img src="img/masonry-img/7.jpg" alt="" >
-                </div>
-                <div class="item mid add">
-                    <img src="img/masonry-img/8.jpg" alt="" >
-                    <img src="img/masonry-img/9.jpg" alt="" >
-                </div>
-                <div class="item add">
-                    <img src="img/masonry-img/4.jpg" alt="" >
-                </div>
-                <div class="item last add">
-                    <img src="img/masonry-img/5.jpg" alt="" >
-                </div>
             </div>
-            <div class="gallery-btn"><i class="fas fa-plus"></i><p>Load More</p></div>
+            <div class="gallery-btn">
+                <i id="gallery-btn-plus" class="fas fa-plus">
+                </i><p id="gallery-btn-text">Load More</p>
+                <img id="gallery-loader" class="btn-loader" src="img/loader.png" alt="">
+            </div>
         </div>
     </div>
     <div class="footer">
         <p>&#xa9; Copyright 2015 <span class="highlight">theHam</span> | All Rights Reserved</p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="script.js"></script>
 </body>

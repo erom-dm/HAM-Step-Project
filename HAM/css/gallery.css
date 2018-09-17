@@ -60,10 +60,6 @@
     display: block;
 }
 
-.item.add{
-    display: none;
-}
-
 .gallery-btn{
     display: flex;
     justify-content: space-around;
