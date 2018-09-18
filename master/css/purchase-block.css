@@ -1,5 +1,5 @@
 .purchase-block {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../master/img/purchase-bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/purchase-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
