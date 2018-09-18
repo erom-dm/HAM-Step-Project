@@ -76,13 +76,13 @@
 .register__field {
     border: none;
     box-shadow: 0 0 1px 0 #dedede;
-    background-image: url(../img/lock-img.png);
+    background-image: url(../master/img/lock-img.png);
     background-repeat: no-repeat;
     background-position: 95% center;
 }
 
 .register__field:first-of-type {
-    background-image: url(../img/e-mail-img.png);
+    background-image: url(../master/img/e-mail-img.png);
 }
 
 .register__field:focus {
